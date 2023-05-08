@@ -1,0 +1,9 @@
+{:dependencies [[no.cjohansen/portfolio "2023.04.26"]]
+ :builds
+ {:dev {:target :browser
+        :output-dir "resources/public/js"
+        :asset-path "/js"
+        :modules {:main {:entries [user]
+                         :init-fn user/start!}}}}
+ :dev-http {5003 "resources/public"}
+ }

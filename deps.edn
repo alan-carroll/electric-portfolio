@@ -1,0 +1,20 @@
+{:paths ["src" "resources"]
+ :deps {org.clojure/clojure {:mvn/version "1.11.1"}
+        org.clojure/clojurescript {:mvn/version "1.11.60"}
+        com.hyperfiddle/electric {:mvn/version "v2-alpha-263-g89da9d11"}
+        com.hyperfiddle/rcf {:mvn/version "20220926-202227"}
+        missionary/missionary {:mvn/version "b.27-SNAPSHOT"}
+        info.sunng/ring-jetty9-adapter {:mvn/version "0.20.0"
+                                        :exclusions [org.slf4j/slf4j-api info.sunng/ring-jetty9-adapter-http3]}
+        ring-basic-authentication/ring-basic-authentication {:mvn/version "1.1.1"}}
+ :aliases {:dev
+           {:extra-deps {thheller/shadow-cljs {:mvn/version "2.22.10"}
+                         no.cjohansen/portfolio {:mvn/version "2023.04.26"}
+                         binaryage/devtools {:mvn/version "1.0.6"}}
+            :jvm-opts
+            ["-Xss2m" ; https://github.com/hyperfiddle/photon/issues/11
+             "-XX:-OmitStackTraceInFastThrow" ;; RCF
+             ]
+            :exec-fn user/main
+            :exec-args ()}}
+}

@@ -1,0 +1,8 @@
+/.git/
+/.cpcache/
+/.nrepl-port
+/.clj-kondo/
+/.calva/
+/.lsp/
+/.shadow-cljs/
+resources/public/js
