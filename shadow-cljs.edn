@@ -1,0 +1,8 @@
+{:source-paths ["src" "resources"]
+ :builds
+ {:dev {:target :browser
+        :output-dir "resources/public/js"
+        :asset-path "/js"
+        :modules {:main {:entries [dev.electric-entry]
+                         :init-fn dev.electric-entry/start!}}
+        :build-hooks [(hyperfiddle.electric.shadow-cljs.hooks/reload-clj)]}}}
