@@ -3,12 +3,14 @@
             [hyperfiddle.electric-dom2 :as dom]
             #?(:cljs [portfolio.ui])
             [electric-portfolio.util :as util]
-            [electric-portfolio.tests.general-scenes]))
+            [electric-portfolio.tests.general-scenes]
+            [electric-portfolio.tests.electric-tutorial-scenes]))
 
 (e/def scenes
   (merge
    {}
-   electric-portfolio.tests.general-scenes/scenes))
+   electric-portfolio.tests.general-scenes/scenes
+   electric-portfolio.tests.electric-tutorial-scenes/scenes))
 
 (def portfolio-config
   {:config
