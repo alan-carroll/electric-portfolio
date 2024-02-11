@@ -5,6 +5,6 @@
 /.calva/
 /.lsp/
 /.shadow-cljs/
-resources/public/assets/js/
+resources/public/js/
 node_modules/
 scratch/
