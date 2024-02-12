@@ -29,8 +29,24 @@
    (defscene greatness
      (util/electric-node Electric-components)))
 
+(e/defn ContainerTest []
+  (e/client 
+   (dom/h1 
+    (dom/text "This electric component is at the top of an extra tall div."))
+   (dom/h1 
+    (dom/text "This component is way down at the bottom!")
+    (dom/props {:style {:padding-top "800px"}}))))
+#?(:cljs
+   (defscene fixed-height-container
+     (let [div (gdom/createElement "div")
+           electric-node (util/electric-node ContainerTest)]
+       (set! (.-height (.-style div)) "1000px")
+       (.appendChild div electric-node)
+       div)))
+
 ;; Aggregate all `e/defn` scenes together
 (e/def scenes
   (e/client 
    (util/into-scenes [Electric-hello
-                      Electric-components])))
+                      Electric-components
+                      ContainerTest])))

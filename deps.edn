@@ -3,7 +3,8 @@
         org.clojure/clojurescript {:mvn/version "1.11.121"}
         org.clojure/tools.logging {:mvn/version "1.2.4"}
         com.hyperfiddle/electric {:git/url "https://github.com/hyperfiddle/electric" :git/sha "b32ac98df7d7ec87f225d47354671be172ffa87e"}
-        ring/ring {:mvn/version "1.11.0"}
+        ring/ring-core {:mvn/version "1.11.0"}
+        ring-basic-authentication/ring-basic-authentication {:mvn/version "1.2.0"}
         ;; ch.qos.logback/logback-classic {:mvn/version "1.4.14"}
         }
  :aliases {:dev
@@ -17,4 +18,6 @@
                          no.cjohansen/portfolio {:mvn/version "2023.12.07"}
                          thheller/shadow-cljs {:mvn/version "2.26.2"}
                          ring/ring-jetty-adapter {:mvn/version "1.11.0"}
-                         alan-carroll/zero {:git/url "https://github.com/alan-carroll/zero" :git/sha "97b99fdc6e19e7b53c7888e9a188255a33f88396"}}}}}
+                         alan-carroll/zero {:git/url "https://github.com/alan-carroll/zero" :git/sha "97b99fdc6e19e7b53c7888e9a188255a33f88396"}
+                         datascript/datascript {:mvn/version "1.6.1"} ; electric-tutorial '8. Webview' and '9. Todos Simple'
+                         }}}}

@@ -14,7 +14,10 @@
 
 (def portfolio-config
   {:config
-   {:css-paths ["/css/test.css"]}})
+   {:viewport/options
+    [{:title "Fixed height"
+      :value {:viewport/height "800px"}}]
+    :css-paths ["/css/test.css"]}})
 
 (e/defn Scene [^js node]
   (e/client
