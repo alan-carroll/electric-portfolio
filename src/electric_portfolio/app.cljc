@@ -4,13 +4,15 @@
             #?(:cljs [portfolio.ui])
             [electric-portfolio.util :as util]
             [electric-portfolio.tests.general-scenes]
-            [electric-portfolio.tests.electric-tutorial-scenes]))
+            [electric-portfolio.tests.electric-tutorial-scenes]
+            [electric-portfolio.tests.tutorial-7guis-scenes]))
 
 (e/def scenes
   (merge
    {}
    electric-portfolio.tests.general-scenes/scenes
-   electric-portfolio.tests.electric-tutorial-scenes/scenes))
+   electric-portfolio.tests.electric-tutorial-scenes/scenes
+   electric-portfolio.tests.tutorial-7guis-scenes/scenes))
 
 (def portfolio-config
   {:config
