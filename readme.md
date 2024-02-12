@@ -1,5 +1,7 @@
 An example repo for combining [portfolio](https://github.com/cjohansen/portfolio) and [electric](https://github.com/hyperfiddle/electric).
 
+![](docs/demo.gif)
+
 # Run the demo
 * Shell: `clj -A:dev -X dev.electric-entry/-main` or REPL: `(dev.electric-entry/-main)`
 * http://localhost:8080
