@@ -29,6 +29,7 @@
    (defscene greatness
      (util/electric-node Electric-components)))
 
+;; electric-nodes can be added to non-electric nodes
 (e/defn ContainerTest []
   (e/client 
    (dom/h1 
